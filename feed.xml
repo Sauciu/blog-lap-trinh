@@ -3,12 +3,833 @@
     <title>Blog lập trình Java và JavaScript</title>
     <link href="https://sauciu.github.io/blog-lap-trinh/feed.xml" rel="self" />
     <link href="https://sauciu.github.io/blog-lap-trinh" />
-    <updated>2025-12-27T23:58:41+07:00</updated>
+    <updated>2025-12-29T17:51:21+07:00</updated>
     <author>
         <name>Hoàng Anh Thư</name>
     </author>
     <id>https://sauciu.github.io/blog-lap-trinh</id>
 
+    <entry>
+        <title>Bài 1: Khai báo biến trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript-2.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript-2.html</id>
+
+        <updated>2025-12-29T17:51:21+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 1: Khai báo biến trong JavaScript Biến dùng để lưu trữ dữ liệu trong JavaScript, chẳng hạn như tên, tuổi hoặc điểm số. Từ khóa let dùng để khai&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 1: Khai báo biến trong JavaScript</h2>
+
+  <p>
+    <strong>Biến</strong> dùng để lưu trữ dữ liệu trong JavaScript,
+    chẳng hạn như tên, tuổi hoặc điểm số.
+  </p>
+
+  <h3>1. Khai báo biến với let</h3>
+  <p>
+    Từ khóa <code>let</code> dùng để khai báo biến
+    và cho phép thay đổi giá trị của biến.
+  </p>
+
+  <pre><code>
+let name = "An";
+let age = 20;
+
+console.log(name);
+console.log(age);
+  </code></pre>
+
+  <h3>2. Khai báo hằng số với const</h3>
+  <p>
+    <code>const</code> dùng để khai báo biến
+    không thể thay đổi giá trị sau khi gán.
+  </p>
+
+  <pre><code>
+const country = "Vietnam";
+console.log(country);
+  </code></pre>
+
+  <h3>3. So sánh let và const</h3>
+  <ul>
+    <li><code>let</code>: có thể thay đổi giá trị</li>
+    <li><code>const</code>: không thể thay đổi giá trị</li>
+  </ul>
+
+  <h3>4. Ví dụ thực tế</h3>
+  <p>
+    Ví dụ dưới đây minh họa sự khác nhau giữa <code>let</code> và <code>const</code>.
+  </p>
+
+  <pre><code>
+let score = 8;
+score = 9;
+
+const subject = "JavaScript";
+
+console.log(score);
+console.log(subject);
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Ưu tiên dùng <code>const</code><br>
+    - Chỉ dùng <code>let</code> khi cần thay đổi giá trị<br>
+    - Tên biến nên rõ nghĩa, dễ hiểu
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 2: Kiểu dữ liệu cơ bản trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-2-kieu-du-lieu-co-ban-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-2-kieu-du-lieu-co-ban-trong-javascript.html</id>
+
+        <updated>2025-12-29T17:50:57+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 2: Kiểu dữ liệu cơ bản trong JavaScript Kiểu dữ liệu cho biết loại giá trị mà một biến đang lưu trữ. JavaScript có nhiều kiểu dữ liệu, trong&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 2: Kiểu dữ liệu cơ bản trong JavaScript</h2>
+
+  <p>
+    <strong>Kiểu dữ liệu</strong> cho biết loại giá trị mà một biến đang lưu trữ.
+    JavaScript có nhiều kiểu dữ liệu, trong đó các kiểu cơ bản được dùng nhiều nhất.
+  </p>
+
+  <h3>1. Kiểu String (Chuỗi)</h3>
+  <p>
+    Kiểu <code>String</code> dùng để lưu trữ văn bản.
+    Chuỗi được đặt trong dấu ngoặc kép hoặc ngoặc đơn.
+  </p>
+
+  <pre><code>
+let name = "An";
+let message = 'Xin chào';
+
+console.log(name);
+console.log(message);
+  </code></pre>
+
+  <h3>2. Kiểu Number (Số)</h3>
+  <p>
+    Kiểu <code>Number</code> dùng để lưu trữ số nguyên hoặc số thập phân.
+  </p>
+
+  <pre><code>
+let age = 20;
+let score = 8.5;
+
+console.log(age);
+console.log(score);
+  </code></pre>
+
+  <h3>3. Kiểu Boolean (Đúng / Sai)</h3>
+  <p>
+    Kiểu <code>Boolean</code> chỉ có hai giá trị: <code>true</code> hoặc <code>false</code>.
+  </p>
+
+  <pre><code>
+let isStudent = true;
+let isOnline = false;
+
+console.log(isStudent);
+console.log(isOnline);
+  </code></pre>
+
+  <h3>4. Kiểm tra kiểu dữ liệu với typeof</h3>
+  <p>
+    Toán tử <code>typeof</code> dùng để kiểm tra kiểu dữ liệu của biến.
+  </p>
+
+  <pre><code>
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof isStudent);
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - String: văn bản<br>
+    - Number: số<br>
+    - Boolean: đúng hoặc sai<br>
+    - Dùng <code>typeof</code> để kiểm tra kiểu dữ liệu
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 3: Toán tử trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-3-toan-tu-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-3-toan-tu-trong-javascript.html</id>
+
+        <updated>2025-12-29T17:50:31+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 3: Toán tử trong JavaScript Toán tử được dùng để thực hiện các phép tính, so sánh và gán giá trị trong JavaScript. Các toán tử số học thường&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 3: Toán tử trong JavaScript</h2>
+
+  <p>
+    <strong>Toán tử</strong> được dùng để thực hiện các phép tính,
+    so sánh và gán giá trị trong JavaScript.
+  </p>
+
+  <h3>1. Toán tử số học</h3>
+  <p>
+    Các toán tử số học thường dùng gồm:
+    <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>.
+  </p>
+
+  <pre><code>
+let a = 10;
+let b = 3;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+  </code></pre>
+
+  <h3>2. Toán tử gán</h3>
+  <p>
+    Toán tử gán <code>=</code> dùng để gán giá trị cho biến.
+  </p>
+
+  <pre><code>
+let x = 5;
+x = x + 2;
+
+console.log(x);
+  </code></pre>
+
+  <h3>3. Toán tử so sánh</h3>
+  <p>
+    Toán tử so sánh dùng để so sánh hai giá trị
+    và trả về kết quả đúng hoặc sai.
+  </p>
+
+  <pre><code>
+let m = 5;
+let n = "5";
+
+console.log(m == n);
+console.log(m === n);
+console.log(m != n);
+console.log(m > 3);
+  </code></pre>
+
+  <h3>4. Toán tử tăng và giảm</h3>
+  <p>
+    Toán tử <code>++</code> dùng để tăng giá trị,
+    <code>--</code> dùng để giảm giá trị.
+  </p>
+
+  <pre><code>
+let count = 1;
+
+count++;
+console.log(count);
+
+count--;
+console.log(count);
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - <code>==</code> chỉ so sánh giá trị<br>
+    - <code>===</code> so sánh cả giá trị và kiểu dữ liệu<br>
+    - Sử dụng toán tử phù hợp để tránh lỗi
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 4: Ép kiểu dữ liệu trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-4-ep-kieu-du-lieu-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-4-ep-kieu-du-lieu-trong-javascript.html</id>
+
+        <updated>2025-12-29T17:49:52+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 4: Ép kiểu dữ liệu trong JavaScript Ép kiểu dữ liệu là quá trình chuyển đổi dữ liệu từ kiểu này sang kiểu khác để phù hợp với mục&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 4: Ép kiểu dữ liệu trong JavaScript</h2>
+
+  <p>
+    <strong>Ép kiểu dữ liệu</strong> là quá trình chuyển đổi dữ liệu
+    từ kiểu này sang kiểu khác để phù hợp với mục đích sử dụng.
+  </p>
+
+  <h3>1. Ép kiểu sang Number</h3>
+  <p>
+    Dùng hàm <code>Number()</code> để chuyển chuỗi sang số.
+  </p>
+
+  <pre><code>
+let a = "10";
+let b = Number(a);
+
+console.log(b);
+console.log(typeof b);
+  </code></pre>
+
+  <h3>2. Ép kiểu sang String</h3>
+  <p>
+    Dùng hàm <code>String()</code> để chuyển dữ liệu sang chuỗi.
+  </p>
+
+  <pre><code>
+let num = 20;
+let text = String(num);
+
+console.log(text);
+console.log(typeof text);
+  </code></pre>
+
+  <h3>3. Ép kiểu tự động</h3>
+  <p>
+    JavaScript có thể tự động ép kiểu trong một số trường hợp.
+  </p>
+
+  <pre><code>
+let x = "5" + 2;
+let y = "5" - 2;
+
+console.log(x);
+console.log(y);
+  </code></pre>
+
+  <p>
+    Dấu <code>+</code> sẽ nối chuỗi, còn dấu <code>-</code> sẽ ép kiểu sang số.
+  </p>
+
+  <h3>4. Giá trị NaN</h3>
+  <p>
+    <code>NaN</code> (Not a Number) xuất hiện khi việc ép kiểu thất bại.
+  </p>
+
+  <pre><code>
+let result = Number("abc");
+console.log(result);
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Luôn kiểm tra kiểu dữ liệu sau khi ép kiểu<br>
+    - Cẩn thận với ép kiểu tự động<br>
+    - <code>NaN</code> là dấu hiệu dữ liệu không hợp lệ
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 5: Câu lệnh điều kiện if – else trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-5-cau-lenh-dieu-kien-if-else-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-5-cau-lenh-dieu-kien-if-else-trong-javascript.html</id>
+
+        <updated>2025-12-29T17:49:17+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 5: Câu lệnh điều kiện if – else trong JavaScript Câu lệnh điều kiện cho phép chương trình đưa ra quyết định dựa trên điều kiện đúng hoặc sai.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 5: Câu lệnh điều kiện if – else trong JavaScript</h2>
+
+  <p>
+    <strong>Câu lệnh điều kiện</strong> cho phép chương trình đưa ra
+    quyết định dựa trên điều kiện đúng hoặc sai.
+  </p>
+
+  <h3>1. Câu lệnh if</h3>
+  <p>
+    Câu lệnh <code>if</code> được sử dụng khi chỉ có một điều kiện cần kiểm tra.
+  </p>
+
+  <pre><code>
+let age = 20;
+
+if (age >= 18) {
+  console.log("Bạn đã đủ 18 tuổi");
+}
+  </code></pre>
+
+  <h3>2. Câu lệnh if – else</h3>
+  <p>
+    <code>else</code> được dùng khi điều kiện trong <code>if</code> không đúng.
+  </p>
+
+  <pre><code>
+let score = 4;
+
+if (score >= 5) {
+  console.log("Bạn đã đậu");
+} else {
+  console.log("Bạn đã rớt");
+}
+  </code></pre>
+
+  <h3>3. Điều kiện so sánh</h3>
+  <p>
+    Các toán tử so sánh thường dùng: <code>></code>, <code><</code>,
+    <code>>=</code>, <code><=</code>, <code>==</code>, <code>===</code>.
+  </p>
+
+  <pre><code>
+let number = 10;
+
+if (number === 10) {
+  console.log("Giá trị đúng");
+}
+  </code></pre>
+
+  <h3>4. Câu lệnh else if</h3>
+  <p>
+    <code>else if</code> dùng để kiểm tra nhiều điều kiện khác nhau.
+  </p>
+
+  <pre><code>
+let point = 8;
+
+if (point >= 9) {
+  console.log("Giỏi");
+} else if (point >= 7) {
+  console.log("Khá");
+} else {
+  console.log("Trung bình");
+}
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Điều kiện luôn trả về true hoặc false<br>
+    - Ưu tiên dùng <code>===</code> thay vì <code>==</code><br>
+    - Viết điều kiện rõ ràng để tránh lỗi logic
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 6: Toán tử logic trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-6-toan-tu-logic-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-6-toan-tu-logic-trong-javascript.html</id>
+
+        <updated>2025-12-29T17:48:36+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 6: Toán tử logic trong JavaScript Toán tử logic được dùng để kết hợp nhiều điều kiện và trả về kết quả đúng hoặc sai. Toán tử && trả&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 6: Toán tử logic trong JavaScript</h2>
+
+  <p>
+    <strong>Toán tử logic</strong> được dùng để kết hợp nhiều điều kiện
+    và trả về kết quả đúng hoặc sai.
+  </p>
+
+  <h3>1. Toán tử AND (&&)</h3>
+  <p>
+    Toán tử <code>&&</code> trả về <strong>true</strong> khi tất cả điều kiện đều đúng.
+  </p>
+
+  <pre><code>
+let age = 20;
+let hasID = true;
+
+if (age >= 18 && hasID) {
+  console.log("Đủ điều kiện");
+}
+  </code></pre>
+
+  <h3>2. Toán tử OR (||)</h3>
+  <p>
+    Toán tử <code>||</code> trả về <strong>true</strong> khi có ít nhất một điều kiện đúng.
+  </p>
+
+  <pre><code>
+let isStudent = false;
+let isTeacher = true;
+
+if (isStudent || isTeacher) {
+  console.log("Được truy cập");
+}
+  </code></pre>
+
+  <h3>3. Toán tử NOT (!)</h3>
+  <p>
+    Toán tử <code>!</code> dùng để phủ định giá trị.
+  </p>
+
+  <pre><code>
+let isOnline = false;
+
+if (!isOnline) {
+  console.log("Người dùng đang offline");
+}
+  </code></pre>
+
+  <h3>4. Kết hợp nhiều toán tử logic</h3>
+  <p>
+    Có thể kết hợp nhiều toán tử logic trong một điều kiện.
+  </p>
+
+  <pre><code>
+let score = 8;
+
+if (score >= 5 && score <= 10) {
+  console.log("Điểm hợp lệ");
+}
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - <code>&&</code>: tất cả điều kiện đúng<br>
+    - <code>||</code>: chỉ cần một điều kiện đúng<br>
+    - <code>!</code>: đảo ngược giá trị
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 7: Vòng lặp for trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-7-vong-lap-for-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-7-vong-lap-for-trong-javascript.html</id>
+
+        <updated>2025-12-29T17:47:52+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 7: Vòng lặp for trong JavaScript Vòng lặp dùng để lặp lại một đoạn code nhiều lần. Trong JavaScript, vòng lặp for là vòng lặp phổ biến nhất. Vòng&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 7: Vòng lặp for trong JavaScript</h2>
+
+  <p>
+    <strong>Vòng lặp</strong> dùng để lặp lại một đoạn code nhiều lần.
+    Trong JavaScript, vòng lặp <code>for</code> là vòng lặp phổ biến nhất.
+  </p>
+
+  <h3>1. Cấu trúc vòng lặp for</h3>
+  <p>
+    Vòng lặp <code>for</code> gồm 3 phần: khởi tạo biến, điều kiện lặp
+    và bước tăng/giảm.
+  </p>
+
+  <pre><code>
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+  </code></pre>
+
+  <p>
+    Đoạn code trên sẽ in ra các số từ 1 đến 5.
+  </p>
+
+  <h3>2. Biến đếm trong vòng lặp</h3>
+  <p>
+    Biến <code>i</code> thường được dùng làm biến đếm trong vòng lặp.
+  </p>
+
+  <pre><code>
+for (let i = 0; i < 3; i++) {
+  console.log("JavaScript");
+}
+  </code></pre>
+
+  <h3>3. Vòng lặp với điều kiện</h3>
+  <p>
+    Vòng lặp sẽ chạy khi điều kiện còn đúng.
+  </p>
+
+  <pre><code>
+for (let i = 2; i <= 10; i += 2) {
+  console.log(i);
+}
+  </code></pre>
+
+  <p>
+    Đoạn code trên in ra các số chẵn từ 2 đến 10.
+  </p>
+
+  <h3>4. Khi nào nên dùng vòng lặp for?</h3>
+  <ul>
+    <li>Khi biết trước số lần lặp</li>
+    <li>Khi cần xử lý danh sách số</li>
+    <li>Khi cần lặp theo chỉ số</li>
+  </ul>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Vòng lặp giúp giảm lặp code<br>
+    - Luôn kiểm tra điều kiện để tránh vòng lặp vô hạn<br>
+    - Biến đếm nên khai báo bằng <code>let</code>
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 8: Hàm (Function) cơ bản trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-8-ham-function-co-ban-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-8-ham-function-co-ban-trong-javascript.html</id>
+
+        <updated>2025-12-29T17:47:05+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 8: Hàm (Function) cơ bản trong JavaScript Hàm (function) là một khối lệnh dùng để thực hiện một công việc cụ thể và có thể được sử dụng nhiều&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 8: Hàm (Function) cơ bản trong JavaScript</h2>
+
+  <p>
+    <strong>Hàm (function)</strong> là một khối lệnh dùng để thực hiện
+    một công việc cụ thể và có thể được sử dụng nhiều lần trong chương trình.
+  </p>
+
+  <h3>1. Khai báo hàm</h3>
+  <p>
+    Cú pháp khai báo một hàm trong JavaScript như sau:
+  </p>
+
+  <pre><code>
+function sayHello() {
+  console.log("Xin chào JavaScript");
+}
+
+sayHello();
+  </code></pre>
+
+  <h3>2. Hàm có tham số</h3>
+  <p>
+    Hàm có thể nhận <strong>tham số</strong> để xử lý dữ liệu linh hoạt hơn.
+  </p>
+
+  <pre><code>
+function greet(name) {
+  console.log("Xin chào " + name);
+}
+
+greet("An");
+greet("Bình");
+  </code></pre>
+
+  <h3>3. Hàm có giá trị trả về</h3>
+  <p>
+    Sử dụng từ khóa <code>return</code> để trả về kết quả từ hàm.
+  </p>
+
+  <pre><code>
+function tinhTong(a, b) {
+  return a + b;
+}
+
+let ketQua = tinhTong(4, 6);
+console.log(ketQua);
+  </code></pre>
+
+  <h3>4. Lưu kết quả hàm vào biến</h3>
+  <p>
+    Giá trị trả về của hàm có thể được gán cho một biến.
+  </p>
+
+  <pre><code>
+let result = tinhTong(2, 3);
+console.log(result);
+  </code></pre>
+
+  <h3>5. Khi nào nên dùng hàm?</h3>
+  <ul>
+    <li>Khi một đoạn code được dùng nhiều lần</li>
+    <li>Khi muốn chương trình dễ đọc và dễ bảo trì</li>
+    <li>Khi cần chia nhỏ chương trình thành các phần</li>
+  </ul>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Hàm giúp tái sử dụng code<br>
+    - Hàm có thể có hoặc không có tham số<br>
+    - Hàm có thể trả về hoặc không trả về giá trị
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 9: Phạm vi biến (Scope) trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript.html</id>
+
+        <updated>2025-12-29T17:41:53+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 9: Phạm vi biến (Scope) trong JavaScript Phạm vi biến (scope) quyết định biến có thể được sử dụng ở đâu trong chương trình JavaScript. Hiểu rõ scope giúp&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 9: Phạm vi biến (Scope) trong JavaScript</h2>
+
+  <p>
+    <strong>Phạm vi biến (scope)</strong> quyết định biến có thể được sử dụng
+    ở đâu trong chương trình JavaScript. Hiểu rõ scope giúp tránh lỗi
+    và viết code dễ kiểm soát hơn.
+  </p>
+
+  <h3>1. Biến toàn cục (Global scope)</h3>
+  <p>
+    Biến được khai báo bên ngoài mọi khối lệnh hoặc hàm được gọi là
+    biến toàn cục. Biến này có thể được truy cập ở bất kỳ đâu.
+  </p>
+
+  <pre><code>
+let message = "Xin chào";
+
+function sayHello() {
+  console.log(message);
+}
+
+sayHello();
+  </code></pre>
+
+  <h3>2. Phạm vi khối (Block scope)</h3>
+  <p>
+    Các biến khai báo bằng <code>let</code> và <code>const</code> chỉ tồn tại
+    trong khối lệnh <code>{ }</code> mà chúng được khai báo.
+  </p>
+
+  <pre><code>
+if (true) {
+  let number = 10;
+  console.log(number);
+}
+  </code></pre>
+
+  <p>
+    Dòng code dưới đây sẽ gây lỗi vì biến <code>number</code> không tồn tại
+    bên ngoài khối <code>if</code>.
+  </p>
+
+  <pre><code>
+console.log(number); // lỗi
+  </code></pre>
+
+  <h3>3. So sánh let và var</h3>
+  <p>
+    <code>var</code> không có block scope, vì vậy dễ gây lỗi không mong muốn.
+    Trong JavaScript hiện đại, nên tránh dùng <code>var</code>.
+  </p>
+
+  <pre><code>
+if (true) {
+  var x = 5;
+}
+console.log(x); // vẫn chạy được
+  </code></pre>
+
+  <h3>4. Phạm vi biến trong hàm</h3>
+  <p>
+    Biến khai báo bên trong hàm chỉ được sử dụng trong hàm đó.
+  </p>
+
+  <pre><code>
+function demo() {
+  let text = "JavaScript";
+  console.log(text);
+}
+
+demo();
+  </code></pre>
+
+  <p>
+    Dòng code dưới đây sẽ gây lỗi:
+  </p>
+
+  <pre><code>
+console.log(text); // lỗi
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Ưu tiên dùng <code>let</code> và <code>const</code><br>
+    - Tránh dùng <code>var</code><br>
+    - Hiểu rõ scope giúp tránh lỗi trùng tên biến
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Bài 9: Kết nối Java Backend và JavaScript Frontend trong lập trình Web</title>
         <author>
@@ -68,992 +889,6 @@ public class HelloServlet extends HttpServlet {
 
   <p>
     
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 8: Câu điều kiện và vòng lặp trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-8-cau-dieu-kien-va-vong-lap-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-8-cau-dieu-kien-va-vong-lap-trong-javascript.html</id>
-
-        <updated>2025-12-24T13:31:00+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Giới thiệu Trong JavaScript, câu điều kiện và vòng lặp giúp chương trình đưa ra quyết định và lặp lại các thao tác. Đây là phần kiến thức rất quan&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h3 id="gioi-thieu">
-      Giới thiệu
-    </h3>
-
-  <p>
-    Trong JavaScript, câu điều kiện và vòng lặp giúp chương trình đưa ra quyết định và lặp lại các thao tác. Đây là phần kiến thức rất quan trọng khi xử lý logic và dữ liệu trên website.
-  </p>
-
-    <h3 id="cau-dieu-kien-if-else">
-      Câu điều kiện if – else
-    </h3>
-
-  <p>
-    if – else dùng để kiểm tra điều kiện đúng hoặc sai.<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>let number = 7;
-
-if (number % 2 === 0) {
-    console.log("So chan");
-} else {
-    console.log("So le");
-}</code></pre>
-
-  <p>
-    <br>Kết quả:
-  </p>
-<pre class="line-numbers  language-javascript"><code>So le</code></pre>
-
-    <h3 id="cau-lenh-else-iflessbrgreater">
-      Câu lệnh else if<br>
-    </h3>
-
-  <p>
-    else if dùng khi có nhiều điều kiện cần kiểm tra.<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>let score = 8;
-
-if (score &gt;= 9) {
-    console.log("Gioi");
-} else if (score &gt;= 7) {
-    console.log("Kha");
-} else {
-    console.log("Trung binh");
-}
-</code></pre>
-
-  <p>
-    Kết quả:
-  </p>
-<pre class="line-numbers  language-javascript"><code>Kha</code></pre>
-
-    <h3 id="vong-lap-for">
-      Vòng lặp for
-    </h3>
-
-  <p>
-    for thường dùng khi biết trước số lần lặp.<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>for (let i = 1; i &lt;= 5; i++) {
-    console.log(i);
-}</code></pre>
-
-  <p>
-    <br>Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>1
-2
-3
-4
-5</code></pre>
-
-    <h3 id="vong-lap-while">
-      Vòng lặp while
-    </h3>
-
-  <p>
-    while dùng khi chưa biết trước số lần lặp.
-  </p>
-<pre class="line-numbers  language-javascript"><code>let i = 1;
-
-while (i &lt;= 3) {
-    console.log(i);
-    i++;
-}</code></pre>
-
-  <p>
-    <br>Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>1
-2
-3</code></pre>
-
-    <h3 id="vong-lap-do-while">
-      Vòng lặp do – while
-    </h3>
-
-  <p>
-    do – while đảm bảo đoạn code được chạy ít nhất một lần.<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>let i = 1;
-
-do {
-    console.log(i);
-    i++;
-} while (i &lt;= 3);
-</code></pre>
-
-  <p>
-    Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>1
-2
-3</code></pre>
-
-    <h3 id="vong-lap-forof">
-      Vòng lặp for…of
-    </h3>
-
-  <p>
-    for...of thường dùng để duyệt các phần tử trong mảng.<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>let arr = [1, 2, 3, 4];
-
-for (let item of arr) {
-    console.log(item);
-}</code></pre>
-
-  <p>
-    <br>Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>1
-2
-3
-4</code></pre>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 7: Câu điều kiện và vòng lặp trong Java</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-7-cau-dieu-kien-va-vong-lap-trong-java.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-7-cau-dieu-kien-va-vong-lap-trong-java.html</id>
-
-        <updated>2025-12-23T16:31:00+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Giới thiệu Trong Java, câu điều kiện và vòng lặp giúp chương trình đưa ra quyết định và lặp lại các thao tác cần thiết. Dưới đây là những cấu&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h3 id="gioi-thieu">
-      Giới thiệu
-    </h3>
-
-  <p>
-    Trong Java, câu điều kiện và vòng lặp giúp chương trình đưa ra quyết định và lặp lại các thao tác cần thiết. Dưới đây là những cấu trúc cơ bản thường dùng nhất.<br>
-  </p>
-
-    <h3 id="cau-dieu-kien-if-elselessbrgreater">
-      Câu điều kiện if – else<br>
-    </h3>
-
-  <p>
-    if – else dùng để kiểm tra điều kiện đúng hoặc sai.<br>
-  </p>
-<pre class="line-numbers  language-java"><code>int number = 10;
-
-if (number % 2 == 0) {
-    System.out.println("So chan");
-} else {
-    System.out.println("So le");
-}
-</code></pre>
-
-  <p>
-    Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-java"><code>So chan
-</code></pre>
-
-    <h3 id="cau-lenh-switch-case">
-      Câu lệnh switch – case
-    </h3>
-
-  <p>
-    switch – case dùng khi cần so sánh một giá trị với nhiều trường hợp.<br>
-  </p>
-<pre class="line-numbers  language-java"><code>int day = 2;
-
-switch (day) {
-    case 1:
-        System.out.println("Thu hai");
-        break;
-    case 2:
-        System.out.println("Thu ba");
-        break;
-    default:
-        System.out.println("Ngay khac");
-}</code></pre>
-
-  <p>
-    <br>Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-java"><code>Thu ba</code></pre>
-
-    <h3 id="vong-lap-for">
-      Vòng lặp for
-    </h3>
-
-  <p>
-    for thường dùng khi biết trước số lần lặp.<br>
-  </p>
-<pre class="line-numbers  language-java"><code>for (int i = 1; i &lt;= 5; i++) {
-    System.out.println(i);
-}
-</code></pre>
-
-  <p>
-    Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-java"><code>1
-2
-3
-4
-5</code></pre>
-
-    <h3 id="vong-lap-while">
-      Vòng lặp while
-    </h3>
-
-  <p>
-    while dùng khi chưa biết trước số lần lặp.<br>
-  </p>
-<pre class="line-numbers  language-java"><code>int i = 1;
-
-while (i &lt;= 3) {
-    System.out.println(i);
-    i++;
-}</code></pre>
-
-  <p>
-    <br>Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-java"><code>1
-2
-3</code></pre>
-
-    <h3 id="vong-lap-do-while">
-      Vòng lặp do – while
-    </h3>
-
-  <p>
-    do – while đảm bảo khối lệnh chạy ít nhất một lần.<br>
-  </p>
-<pre class="line-numbers  language-java"><code>int i = 1;
-
-do {
-    System.out.println(i);
-    i++;
-} while (i &lt;= 3);
-</code></pre>
-
-  <p>
-    Kết quả:<br>
-  </p>
-<pre class="line-numbers  language-java"><code>1
-2
-3</code></pre>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 6: Biến, kiểu dữ liệu và toán tử trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-6-bien-kieu-du-lieu-va-toan-tu-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-6-bien-kieu-du-lieu-va-toan-tu-trong-javascript.html</id>
-
-        <updated>2025-12-18T00:30:00+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Giới thiệu Trong bài viết này, mình tiếp tục làm quen với biến, kiểu dữ liệu và toán tử trong JavaScript. Đây là những kiến thức cơ bản giúp JavaScript&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h3 id="gioi-thieulessbrgreater">
-      Giới thiệu<br>
-    </h3>
-
-  <p>
-    Trong bài viết này, mình tiếp tục làm quen với biến, kiểu dữ liệu và toán tử trong JavaScript. Đây là những kiến thức cơ bản giúp JavaScript lưu trữ và xử lý dữ liệu.<br>
-  </p>
-
-    <h3 id="bien-va-kieu-du-lieu-trong-javascriptlessbrgreater">
-      Biến và kiểu dữ liệu trong JavaScript<br>
-    </h3>
-
-  <p>
-    JavaScript là ngôn ngữ kiểu động, nên không cần khai báo kiểu dữ liệu trước. Hiện nay, mình thường dùng let và const để khai báo biến.<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>let name = "JavaScript";
-let age = 20;
-const PI = 3.14;
-
-console.log(name);
-console.log(age);
-console.log(PI);
-</code></pre>
-
-  <p>
-    Kết quả (Console):
-  </p>
-<pre class="line-numbers  language-javascript"><code>JavaScript
-20
-3.14</code></pre>
-
-    <h3 id="toan-tu-trong-javascript">
-      Toán tử trong JavaScript
-    </h3>
-
-  <p>
-    JavaScript hỗ trợ các toán tử số học, so sánh và logic.<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>let a = 5;
-let b = 10;
-
-console.log(a + b);      // cộng
-console.log(a &lt; b);      // so sánh
-console.log(5 === "5");  // so sánh cả giá trị và kiểu
-</code></pre>
-
-  <p>
-    Kết quả (Console):<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>15
-true
-false</code></pre>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 5: JavaScript là gì? Vai trò của JavaScript trong lập trình Web</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-5-javascript-la-gi-vai-tro-cua-javascript-trong-lap-trinh-web.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-5-javascript-la-gi-vai-tro-cua-javascript-trong-lap-trinh-web.html</id>
-
-        <updated>2025-12-17T21:26:00+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Giới thiệu Sau khi đã học các kiến thức cơ bản về Java, trong bài viết này mình bắt đầu làm quen với JavaScript. Đây là ngôn ngữ giúp website&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h3 id="gioi-thieulessbrgreater">
-      Giới thiệu<br>
-    </h3>
-
-  <p>
-    Sau khi đã học các kiến thức cơ bản về Java, trong bài viết này mình bắt đầu làm quen với JavaScript. Đây là ngôn ngữ giúp website có thể tương tác với người dùng và trở nên sinh động hơn. JavaScript thường được sử dụng ở Frontend và chạy trực tiếp trong trình duyệt.<br>
-  </p>
-
-    <h3 id="javascript-la-gi">
-      JavaScript là gì?
-    </h3>
-
-  <p>
-    JavaScript là ngôn ngữ lập trình dùng để xử lý các hành động trên trang web như click chuột, nhập dữ liệu và thay đổi nội dung hiển thị.<br><br>Ví dụ hiển thị thông báo:
-  </p>
-<pre class="line-numbers  language-javascript"><code>alert("Hello JavaScript");</code></pre>
-
-  <p>
-    Kết quả:
-  </p>
-
-  <p>
-    Trình duyệt hiển thị hộp thoại:
-  </p>
-<pre class="line-numbers  language-javascript"><code>Hello JavaScript</code></pre>
-
-    <h3 id="khai-bao-bien-trong-javascript">
-      Khai báo biến trong JavaScript
-    </h3>
-
-  <p>
-    JavaScript dùng let để khai báo biến.
-  </p>
-<pre class="line-numbers  language-javascript"><code>let name = "JavaScript";
-let age = 20;
-
-console.log(name);
-console.log(age);</code></pre>
-
-  <p>
-    <br>Kết quả (Console):<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>JavaScript
-20</code></pre>
-
-    <h3 id="xu-ly-su-kien-nguoi-dung">
-      Xử lý sự kiện người dùng
-    </h3>
-
-  <p>
-    JavaScript thường được dùng để xử lý các sự kiện như click chuột.
-  </p>
-<pre class="line-numbers  language-javascript"><code>&lt;button onclick="sayHello()"&gt;Click me&lt;/button&gt;
-
-&lt;script&gt;
-function sayHello() {
-    alert("Xin chào!");
-}
-&lt;/script&gt;
-</code></pre>
-
-  <p>
-    Kết quả:<br>Khi bấm nút Click me, trình duyệt hiển thị:<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>Xin chào!
-</code></pre>
-
-    <h3 id="thay-doi-noi-dung-trang-weblessbrgreater">
-      Thay đổi nội dung trang web<br>
-    </h3>
-
-  <p>
-    JavaScript có thể thay đổi nội dung HTML mà không cần tải lại trang.<br><br><p id="text">Nội dung ban đầu</p>
-  </p>
-<pre class="line-numbers  language-javascript"><code>&lt;p id="text"&gt;Nội dung ban đầu&lt;/p&gt;
-
-&lt;script&gt;
-document.getElementById("text").innerHTML = "Nội dung đã thay đổi";
-&lt;/script&gt;
-</code></pre>
-
-  <p>
-    <br>Kết quả:<br>Dòng chữ hiển thị trên trang đổi thành:<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>Nội dung đã thay đổi
-</code></pre>
-
-    <h3 id="so-sanh-don-gian">
-      So sánh đơn giản
-    </h3>
-<pre class="line-numbers  language-javascript"><code>let a = 5;
-let b = 10;
-
-console.log(a &lt; b);
-</code></pre>
-
-  <p>
-    Kết quả (Console):<br>
-  </p>
-<pre class="line-numbers  language-javascript"><code>true
-</code></pre>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 4: Biến, kiểu dữ liệu và toán tử trong Java</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-4-bien-kieu-du-lieu-va-toan-tu-trong-java.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-4-bien-kieu-du-lieu-va-toan-tu-trong-java.html</id>
-
-        <updated>2025-12-13T13:36:00+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Giới thiệu Sau khi đã làm quen với cấu trúc cơ bản của một chương trình Java, trong bài viết này mình sẽ tiếp tục tìm hiểu về biến, kiểu&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h3 id="gioi-thieu">
-      Giới thiệu
-    </h3>
-
-  <p>
-    Sau khi đã làm quen với cấu trúc cơ bản của một chương trình Java, trong bài viết này mình sẽ tiếp tục tìm hiểu về biến, kiểu dữ liệu và toán tử. Đây là những kiến thức nền tảng giúp chương trình lưu trữ và xử lý dữ liệu.<br>
-  </p>
-
-    <h3 id="bien-trong-javalessbrgreater">
-      Biến trong Java<br>
-    </h3>
-
-  <p>
-    Biến dùng để lưu trữ dữ liệu trong chương trình. Khi khai báo biến, mình cần xác định kiểu dữ liệu, tên biến và giá trị.<br><br>Cú pháp khai báo biến:
-  </p>
-<pre class="line-numbers  language-java"><code>kieudulieu tenBien = giaTri;</code></pre>
-
-  <p>
-    <br>Ví dụ:<br>
-  </p>
-<pre class="line-numbers  language-java"><code>int age = 20;
-double score = 8.5;</code></pre>
-
-    <h3 id="kieu-du-lieu-trong-java">
-      Kiểu dữ liệu trong Java
-    </h3>
-
-  <p>
-    Một số kiểu dữ liệu cơ bản thường dùng
-  </p>
-<pre class="line-numbers  language-java"><code>int number = 10;
-double point = 9.0;
-boolean isPassed = true;
-char grade = 'A';</code></pre>
-
-  <p>
-    <br>Ngoài ra, Java còn có kiểu String dùng để lưu chuỗi ký tự:<br>
-  </p>
-<pre class="line-numbers  language-java"><code>String name = "Java";</code></pre>
-
-    <h3 id="toan-tu-trong-java">
-      Toán tử trong Java
-    </h3>
-
-    <h6 id="toan-tu-so-hoc">
-      Toán tử số học
-    </h6>
-<pre class="line-numbers  language-java"><code>int a = 10;
-int b = 3;
-
-System.out.println(a + b); // cộng
-System.out.println(a - b); // trừ
-System.out.println(a * b); // nhân
-System.out.println(a / b); // chia
-System.out.println(a % b); // chia lấy dư</code></pre>
-
-    <h6 id="toan-tu-so-sanh">
-      Toán tử so sánh
-    </h6>
-<pre class="line-numbers  language-java"><code>int x = 5;
-int y = 10;
-
-System.out.println(x == y);
-System.out.println(x &lt; y);
-System.out.println(x &gt; y);</code></pre>
-
-    <h6 id="toan-tu-logic">
-      Toán tử logic
-    </h6>
-<pre class="line-numbers  language-java"><code>boolean p = true;
-boolean q = false;
-
-System.out.println(p && q);
-System.out.println(p || q);
-System.out.println(!p);</code></pre>
-
-    <h5 id="vi-du-chuong-trinh-minh-hoa">
-      Ví dụ chương trình minh họa
-    </h5>
-<pre class="line-numbers  language-java"><code>public class Example {
-    public static void main(String[] args) {
-        int a = 5;
-        int b = 10;
-        int sum = a + b;
-
-        System.out.println("Tong = " + sum);
-    }
-}
-</code></pre>
-
-  <p>
-    Chương trình trên thực hiện phép cộng hai số và in ra kết quả.
-  </p>
-
-    <h3 id="mot-vai-luu-y-khi-moi-hoc-java">
-      Một vài lưu ý khi mới học Java
-    </h3>
-
-  <p>
-    Phải khai báo biến trước khi sử dụng<br><br>Không thể gán sai kiểu dữ liệu cho biến<br><br>Phân biệt <code>=</code> (gán) và&nbsp;<code>==</code>(so sánh)<br><br>Đặt tên biến rõ ràng, dễ hiểu
-  </p>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 3: Cấu trúc cơ bản của một chương trình Java</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-3-cau-truc-co-ban-cua-mot-chuong-trinh-java.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-3-cau-truc-co-ban-cua-mot-chuong-trinh-java.html</id>
-
-        <updated>2025-12-13T08:27:00+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Giới thiệu Sau khi đã tìm hiểu tổng quan về Java, trong bài viết này mình sẽ giới thiệu cấu trúc cơ bản của một chương trình Java. Đây là&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h3 id="gioi-thieu">
-      Giới thiệu
-    </h3>
-
-  <p>
-    Sau khi đã tìm hiểu tổng quan về Java, trong bài viết này mình sẽ giới thiệu cấu trúc cơ bản của một chương trình Java. Đây là kiến thức nền tảng mà người mới học Java cần nắm để hiểu và viết được những chương trình đầu tiên.
-  </p>
-
-    <h3 id="mot-chuong-trinh-java-co-ban-gom-nhung-gi">
-      Một chương trình Java cơ bản gồm những gì?
-    </h3>
-
-    <h6 id="mot-chuong-trinh-java-don-gian-thuong-co-cac-thanh-phan-chinh">
-      Một chương trình Java đơn giản thường có các thành phần chính:
-    </h6>
-
-  <ul>
-    <li>Class</li><li>Phương thức main</li><li>Các câu lệnh thực thi</li>
-  </ul>
-
-  <p>
-    Mỗi chương trình Java được lưu trong một file có phần mở rộng là .java.
-  </p>
-
-    <h3 id="class-trong-java">
-      Class trong Java
-    </h3>
-
-  <p>
-    Trong Java, class là đơn vị cơ bản để xây dựng chương trình. Mọi đoạn mã đều phải nằm bên trong một class.<br><br>Ví dụ:
-  </p>
-<pre class="line-numbers  language-java"><code>public class HelloJava {
-}
-</code></pre>
-
-  <p>
-    <u>Trong đó:</u><br><br><code>public</code>: phạm vi truy cập
-  </p>
-
-  <p>
-    <code>class</code>: từ khóa khai báo lớp
-  </p>
-
-  <p>
-    <code>HelloJava</code>: tên class, phải trùng với tên file
-  </p>
-
-    <h3 id="phuong-thuc-main">
-      Phương thức main
-    </h3>
-
-  <p>
-    Phương thức main là điểm bắt đầu của chương trình Java. Khi chạy chương trình, Java sẽ tìm và thực thi phương thức này đầu tiên.<br><br>Cú pháp chuẩn của phương thức <code>main</code>:
-  </p>
-<pre class="line-numbers  language-java"><code>public static void main(String[] args) {
-}
-</code></pre>
-
-  <p>
-    <u>Ý nghĩa:</u><br><br><code>public</code>: cho phép chương trình được thực thi
-  </p>
-
-  <p>
-    <code>static</code>: chạy mà không cần tạo đối tượng
-  </p>
-
-  <p>
-    <code>void</code>: không trả về giá trị
-  </p>
-
-  <p>
-    <code>String[] args</code>: tham số dòng lệnh
-  </p>
-
-    <h5 id="vi-du-chuong-trinh-java-hoan-chinh">
-      Ví dụ chương trình Java hoàn chỉnh
-    </h5>
-
-  <p>
-    Dưới đây là một chương trình Java đơn giản:
-  </p>
-<pre class="line-numbers  language-java"><code>public class HelloJava {
-    public static void main(String[] args) {
-        System.out.println("Hello Java");
-    }
-}</code></pre>
-
-  <p>
-    Khi chạy chương trình, màn hình sẽ hiển thị dòng chữ:
-  </p>
-<pre class="line-numbers  language-java"><code>Hello Java
-</code></pre>
-
-    <h5 id="giai-thich-nhanh-chuong-trinh">
-      Giải thích nhanh chương trình
-    </h5>
-
-  <p>
-    <code>public class HelloJava</code>: khai báo class<br><br><code>main</code>: phương thức chính của chương trình<br><br><code>System.out.println()</code>: dùng để in dữ liệu ra màn hình<br><br><code>{ }</code>: xác định phạm vi của class và phương thức<br><br><code>;</code>: kết thúc một câu lệnh
-  </p>
-
-  <p>
-    Việc hiểu rõ từng thành phần giúp mình tránh được các lỗi cú pháp khi mới học Java.
-  </p>
-
-    <h3 id="quy-tac-dat-ten-co-ban-trong-java">
-      Quy tắc đặt tên cơ bản trong Java
-    </h3>
-
-    <h6 id="khi-viet-chuong-trinh-java-minh-can-luu-y-mot-so-quy-tac-sau">
-      Khi viết chương trình Java, mình cần lưu ý một số quy tắc sau:
-    </h6>
-
-  <ul>
-    <li>Tên class viết hoa chữ cái đầu</li><li>Tên file phải trùng với tên class</li><li>Tên biến và phương thức viết thường chữ cái đầu</li><li>Không dùng dấu cách trong tên</li>
-  </ul>
-
-    <h3 id="mot-so-loi-thuong-gap">
-      Một số lỗi thường gặp
-    </h3>
-
-    <h6 id="khi-moi-hoc-java-minh-va-nhieu-ban-thuong-gap-cac-loi-nhu">
-      Khi mới học Java, mình và nhiều bạn thường gặp các lỗi như:
-    </h6>
-
-  <p>
-    Quên dấu <code>;</code><br>Tên file không trùng với tên class<br>Viết sai cú pháp phương thức main<br>Thiếu hoặc dư dấu { }<br><br><strong>Đây là những lỗi cơ bản nhưng có thể khiến chương trình không chạy được.</strong>
-  </p>
-
-  <p>
-    
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 2: Tổng quan về Java và ứng dụng trong lập trình Web</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-2-tong-quan-ve-java-va-ung-dung-trong-lap-trinh-web-2.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-2-tong-quan-ve-java-va-ung-dung-trong-lap-trinh-web-2.html</id>
-
-        <updated>2025-12-11T10:02:00+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Giới thiệu Sau khi đã giới thiệu về mục tiêu của blog, trong bài viết này mình sẽ bắt đầu tìm hiểu sâu hơn về Java – một trong những&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h3 id="gioi-thieu">
-      Giới thiệu
-    </h3>
-
-  <p>
-    Sau khi đã giới thiệu về mục tiêu của blog, trong bài viết này mình sẽ bắt đầu tìm hiểu sâu hơn về Java – một trong những ngôn ngữ lập trình phổ biến và quan trọng hiện nay. Java được sử dụng rộng rãi trong nhiều lĩnh vực, đặc biệt là lập trình Web phía Backend, nơi xử lý logic, dữ liệu và các chức năng cốt lõi của website.
-  </p>
-
-    <h3 id="java-la-gi">
-      Java là gì?
-    </h3>
-
-  <p>
-    Java là một ngôn ngữ lập trình hướng đối tượng, được phát triển bởi Sun Microsystems và hiện nay thuộc quyền quản lý của Oracle. Java nổi tiếng với triết lý:
-  </p>
-
-  <p>
-    <em>“</em><em>W</em><em>rite once, run anywhere”<br>(Viết một lần, chạy ở nhiều nơi)</em>
-  </p>
-
-  <p>
-    Điều này có nghĩa là chương trình Java có thể chạy trên nhiều hệ điều hành khác nhau như Windows, Linux hay macOS mà không cần chỉnh sửa nhiều mã nguồn.
-  </p>
-
-    <h3 id="dac-diem-noi-bat-cua-java">
-      Đặc điểm nổi bật của Java
-    </h3>
-
-    <h6 id="java-so-huu-nhieu-dac-diem-giup-no-tro-thanh-lua-chon-pho-bien-trong-lap-trinh-web">
-      Java sở hữu nhiều đặc điểm giúp nó trở thành lựa chọn phổ biến trong lập trình Web:
-    </h6>
-
-  <ul>
-    <li>Hướng đối tượng rõ ràng, giúp chương trình dễ tổ chức và bảo trì</li><li>Tính bảo mật cao, phù hợp với các hệ thống lớn</li><li>Hoạt động ổn định, hiệu suất tốt</li><li>Có cộng đồng lớn và nhiều tài liệu hỗ trợ</li>
-  </ul>
-
-  <p>
-    Nhờ những ưu điểm này, Java thường được sử dụng trong các hệ thống yêu cầu độ ổn định cao như website doanh nghiệp, thương mại điện tử và các ứng dụng quy mô lớn.
-  </p>
-
-    <h3 id="java-trong-lap-trinh-web">
-      Java trong lập trình Web
-    </h3>
-
-    <h6 id="trong-lap-trinh-web-java-chu-yeu-duoc-su-dung-o-phia-backend-java-dam-nhiem-cac-cong-viec-nhu">
-      Trong lập trình Web, Java chủ yếu được sử dụng ở phía Backend. Java đảm nhiệm các công việc như:
-    </h6>
-
-  <ul>
-    <li>Xử lý yêu cầu từ người dùng</li><li>Thực hiện các logic nghiệp vụ</li><li>Kết nối và thao tác với cơ sở dữ liệu</li><li>Trả dữ liệu về cho phía Frontend</li>
-  </ul>
-
-    <h6 id="mot-so-cong-nghe-web-pho-bien-su-dung-java-co-the-ke-den-nhu">
-      Một số công nghệ Web phổ biến sử dụng Java có thể kể đến như:
-    </h6>
-
-  <ul>
-    <li>Servlet và JSP</li><li>Spring, Spring Boot</li><li>Hibernate, JPA</li>
-  </ul>
-
-  <p>
-    Các công nghệ này giúp việc xây dựng ứng dụng Web bằng Java trở nên dễ dàng và hiệu quả hơn.
-  </p>
-
-    <h5 id="vi-du-don-gian-ve-chuong-trinh-javalessbrgreater">
-      Ví dụ đơn giản về chương trình Java<br>
-    </h5>
-
-  <p>
-    Dưới đây là một ví dụ Java cơ bản giúp làm quen với cấu trúc chương trình:
-  </p>
-<pre class="line-numbers  language-java"><code>public class HelloJava {
-    public static void main(String[] args) {
-        System.out.println("Hello Java Web");
-    }
-}
-</code></pre>
-
-  <p>
-    Chương trình trên có nhiệm vụ in ra một dòng chữ đơn giản và thường được sử dụng khi bắt đầu học Java.
-  </p>
-
-    <h3 id="so-sanh-java-va-javascript">
-      So sánh Java và JavaScript
-    </h3>
-
-  <p>
-    Mặc dù có tên gọi gần giống nhau, Java và JavaScript là hai ngôn ngữ hoàn toàn khác nhau:
-  </p>
-
-  <ul>
-    <li>Java: thường chạy ở Backend, xử lý logic server và dữ liệu</li><li>JavaScript: chủ yếu chạy ở Frontend, xử lý giao diện và tương tác người dùng</li>
-  </ul>
-
-  <p>
-    Trong lập trình Web hiện đại, Java và JavaScript thường được kết hợp với nhau để xây dựng một website hoàn chỉnh, vừa mạnh về xử lý dữ liệu vừa thân thiện với người dùng.
-  </p>
-
-    <h3 id="vai-tro-cua-java-trong-he-thong-web">
-      Vai trò của Java trong hệ thống Web
-    </h3>
-
-    <h6 id="java-dong-vai-tro-quan-trong-trong-vieclessbrgreater">
-      Java đóng vai trò quan trọng trong việc:<br>
-    </h6>
-
-  <ul>
-    <li>Xây dựng các hệ thống Web lớn và phức tạp</li><li>Đảm bảo tính bảo mật và độ ổn định của hệ thống</li><li>Xử lý nhiều người dùng truy cập cùng lúc<br></li>
-  </ul>
-
-  <p>
-    Nhờ đó, Java vẫn giữ được vị trí quan trọng trong lĩnh vực lập trình Web cho đến hiện nay.
-  </p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 1: Giới thiệu về blog và định hướng học lập trình Web với Java &amp; JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-2-tong-quan-ve-java-va-ung-dung-trong-lap-trinh-web.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-2-tong-quan-ve-java-va-ung-dung-trong-lap-trinh-web.html</id>
-
-        <updated>2025-12-10T09:22:00+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Giới thiệu Blog này được mình tạo ra với mục đích chia sẻ kiến thức lập trình cơ bản, đặc biệt là trong lĩnh vực lập trình Web. Nội dung&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                
-    <h3 id="gioi-thieu">
-      Giới thiệu
-    </h3>
-
-  <p>
-    Blog này được mình tạo ra với mục đích chia sẻ kiến thức lập trình cơ bản, đặc biệt là trong lĩnh vực lập trình Web. Nội dung blog chủ yếu là những kiến thức mình đã học và tìm hiểu trong quá trình học tập, được ghi chép và trình bày lại theo cách ngắn gọn, dễ hiểu, phù hợp với những bạn mới bắt đầu.<br><br>Các bài viết trong blog tập trung vào hai ngôn ngữ chính là Java và JavaScript – đây là những ngôn ngữ phổ biến và quan trọng trong quá trình học cũng như làm quen với lập trình Web.
-  </p>
-
-    <h3 id="noi-dung-chinh-cua-blog">
-      Nội dung chính của blog
-    </h3>
-
-  <p>
-    Blog chia sẻ các kiến thức từ cơ bản đến nâng cao, bao gồm:
-  </p>
-
-  <ul>
-    <li>Các khái niệm nền tảng trong lập trình Java và JavaScript</li><li>Cú pháp cơ bản và cấu trúc chương trình</li><li>Câu lệnh điều kiện, vòng lặp, hàm, mảng và chuỗi</li><li>Các ví dụ minh họa ngắn gọn, dễ hiểu<br></li>
-  </ul>
-
-  <p>
-    Mỗi bài viết đều được mình trình bày theo hướng lý thuyết kết hợp ví dụ, giúp người đọc dễ tiếp cận và áp dụng vào thực tế.
-  </p>
-
-    <h3 id="muc-tieu-cua-blog">
-      Mục tiêu của blog
-    </h3>
-
-  <p>
-    Blog được mình xây dựng với những mục tiêu chính sau:
-  </p>
-
-  <ul>
-    <li>Ghi chép và hệ thống hóa lại kiến thức đã học</li><li>Chia sẻ kiến thức lập trình Web cho người mới bắt đầu</li><li>Rèn luyện kỹ năng viết và trình bày nội dung kỹ thuật</li><li>Tạo thói quen tự học và tự tìm hiểu</li>
-  </ul>
-
-  <p>
-    <br>Toàn bộ nội dung trong blog đều được viết bằng tiếng Việt, phù hợp với sinh viên và những bạn mới làm quen với lập trình.
-  </p>
-
-    <h3 id="dinh-huong-trong-thoi-gian-toi">
-      Định hướng trong thời gian tới
-    </h3>
-
-  <p>
-    Trong thời gian tới, mình sẽ tiếp tục cập nhật blog với các nội dung:
-  </p>
-
-  <ul>
-    <li>Kiến thức cơ bản về Java</li><li>Kiến thức nền tảng và ứng dụng của JavaScript</li><li>So sánh Java và JavaScript trong lập trình Web</li><li>Các bài học ngắn theo từng chủ đề cụ thể, dễ hiểu</li>
-  </ul>
-
-    <h3 id="loi-ket">
-      Lời kết
-    </h3>
-
-  <p>
-    Thông qua blog này, mình mong muốn tạo ra một không gian học tập và chia sẻ kiến thức một cách rõ ràng, dễ tiếp cận. Blog không chỉ giúp mình hệ thống lại kiến thức đã học mà còn hy vọng sẽ hỗ trợ được những bạn đang bắt đầu tìm hiểu về lập trình Web.<br><br>Cảm ơn mọi người đã ghé thăm và theo dõi blog của mình.
   </p>
             ]]>
         </content>
