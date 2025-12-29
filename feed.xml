@@ -3,724 +3,12 @@
     <title>Blog lập trình Java và JavaScript</title>
     <link href="https://sauciu.github.io/blog-lap-trinh/feed.xml" rel="self" />
     <link href="https://sauciu.github.io/blog-lap-trinh" />
-    <updated>2025-12-29T17:51:21+07:00</updated>
+    <updated>2025-12-29T17:55:24+07:00</updated>
     <author>
         <name>Hoàng Anh Thư</name>
     </author>
     <id>https://sauciu.github.io/blog-lap-trinh</id>
 
-    <entry>
-        <title>Bài 1: Khai báo biến trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript-2.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript-2.html</id>
-
-        <updated>2025-12-29T17:51:21+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Bài 1: Khai báo biến trong JavaScript Biến dùng để lưu trữ dữ liệu trong JavaScript, chẳng hạn như tên, tuổi hoặc điểm số. Từ khóa let dùng để khai&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><section class="lesson">
-  <h2>Bài 1: Khai báo biến trong JavaScript</h2>
-
-  <p>
-    <strong>Biến</strong> dùng để lưu trữ dữ liệu trong JavaScript,
-    chẳng hạn như tên, tuổi hoặc điểm số.
-  </p>
-
-  <h3>1. Khai báo biến với let</h3>
-  <p>
-    Từ khóa <code>let</code> dùng để khai báo biến
-    và cho phép thay đổi giá trị của biến.
-  </p>
-
-  <pre><code>
-let name = "An";
-let age = 20;
-
-console.log(name);
-console.log(age);
-  </code></pre>
-
-  <h3>2. Khai báo hằng số với const</h3>
-  <p>
-    <code>const</code> dùng để khai báo biến
-    không thể thay đổi giá trị sau khi gán.
-  </p>
-
-  <pre><code>
-const country = "Vietnam";
-console.log(country);
-  </code></pre>
-
-  <h3>3. So sánh let và const</h3>
-  <ul>
-    <li><code>let</code>: có thể thay đổi giá trị</li>
-    <li><code>const</code>: không thể thay đổi giá trị</li>
-  </ul>
-
-  <h3>4. Ví dụ thực tế</h3>
-  <p>
-    Ví dụ dưới đây minh họa sự khác nhau giữa <code>let</code> và <code>const</code>.
-  </p>
-
-  <pre><code>
-let score = 8;
-score = 9;
-
-const subject = "JavaScript";
-
-console.log(score);
-console.log(subject);
-  </code></pre>
-
-  <div class="note">
-    📌 <strong>Ghi nhớ:</strong><br>
-    - Ưu tiên dùng <code>const</code><br>
-    - Chỉ dùng <code>let</code> khi cần thay đổi giá trị<br>
-    - Tên biến nên rõ nghĩa, dễ hiểu
-  </div>
-</section>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 2: Kiểu dữ liệu cơ bản trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-2-kieu-du-lieu-co-ban-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-2-kieu-du-lieu-co-ban-trong-javascript.html</id>
-
-        <updated>2025-12-29T17:50:57+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Bài 2: Kiểu dữ liệu cơ bản trong JavaScript Kiểu dữ liệu cho biết loại giá trị mà một biến đang lưu trữ. JavaScript có nhiều kiểu dữ liệu, trong&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><section class="lesson">
-  <h2>Bài 2: Kiểu dữ liệu cơ bản trong JavaScript</h2>
-
-  <p>
-    <strong>Kiểu dữ liệu</strong> cho biết loại giá trị mà một biến đang lưu trữ.
-    JavaScript có nhiều kiểu dữ liệu, trong đó các kiểu cơ bản được dùng nhiều nhất.
-  </p>
-
-  <h3>1. Kiểu String (Chuỗi)</h3>
-  <p>
-    Kiểu <code>String</code> dùng để lưu trữ văn bản.
-    Chuỗi được đặt trong dấu ngoặc kép hoặc ngoặc đơn.
-  </p>
-
-  <pre><code>
-let name = "An";
-let message = 'Xin chào';
-
-console.log(name);
-console.log(message);
-  </code></pre>
-
-  <h3>2. Kiểu Number (Số)</h3>
-  <p>
-    Kiểu <code>Number</code> dùng để lưu trữ số nguyên hoặc số thập phân.
-  </p>
-
-  <pre><code>
-let age = 20;
-let score = 8.5;
-
-console.log(age);
-console.log(score);
-  </code></pre>
-
-  <h3>3. Kiểu Boolean (Đúng / Sai)</h3>
-  <p>
-    Kiểu <code>Boolean</code> chỉ có hai giá trị: <code>true</code> hoặc <code>false</code>.
-  </p>
-
-  <pre><code>
-let isStudent = true;
-let isOnline = false;
-
-console.log(isStudent);
-console.log(isOnline);
-  </code></pre>
-
-  <h3>4. Kiểm tra kiểu dữ liệu với typeof</h3>
-  <p>
-    Toán tử <code>typeof</code> dùng để kiểm tra kiểu dữ liệu của biến.
-  </p>
-
-  <pre><code>
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof isStudent);
-  </code></pre>
-
-  <div class="note">
-    📌 <strong>Ghi nhớ:</strong><br>
-    - String: văn bản<br>
-    - Number: số<br>
-    - Boolean: đúng hoặc sai<br>
-    - Dùng <code>typeof</code> để kiểm tra kiểu dữ liệu
-  </div>
-</section>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 3: Toán tử trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-3-toan-tu-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-3-toan-tu-trong-javascript.html</id>
-
-        <updated>2025-12-29T17:50:31+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Bài 3: Toán tử trong JavaScript Toán tử được dùng để thực hiện các phép tính, so sánh và gán giá trị trong JavaScript. Các toán tử số học thường&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><section class="lesson">
-  <h2>Bài 3: Toán tử trong JavaScript</h2>
-
-  <p>
-    <strong>Toán tử</strong> được dùng để thực hiện các phép tính,
-    so sánh và gán giá trị trong JavaScript.
-  </p>
-
-  <h3>1. Toán tử số học</h3>
-  <p>
-    Các toán tử số học thường dùng gồm:
-    <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>.
-  </p>
-
-  <pre><code>
-let a = 10;
-let b = 3;
-
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
-  </code></pre>
-
-  <h3>2. Toán tử gán</h3>
-  <p>
-    Toán tử gán <code>=</code> dùng để gán giá trị cho biến.
-  </p>
-
-  <pre><code>
-let x = 5;
-x = x + 2;
-
-console.log(x);
-  </code></pre>
-
-  <h3>3. Toán tử so sánh</h3>
-  <p>
-    Toán tử so sánh dùng để so sánh hai giá trị
-    và trả về kết quả đúng hoặc sai.
-  </p>
-
-  <pre><code>
-let m = 5;
-let n = "5";
-
-console.log(m == n);
-console.log(m === n);
-console.log(m != n);
-console.log(m > 3);
-  </code></pre>
-
-  <h3>4. Toán tử tăng và giảm</h3>
-  <p>
-    Toán tử <code>++</code> dùng để tăng giá trị,
-    <code>--</code> dùng để giảm giá trị.
-  </p>
-
-  <pre><code>
-let count = 1;
-
-count++;
-console.log(count);
-
-count--;
-console.log(count);
-  </code></pre>
-
-  <div class="note">
-    📌 <strong>Ghi nhớ:</strong><br>
-    - <code>==</code> chỉ so sánh giá trị<br>
-    - <code>===</code> so sánh cả giá trị và kiểu dữ liệu<br>
-    - Sử dụng toán tử phù hợp để tránh lỗi
-  </div>
-</section>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 4: Ép kiểu dữ liệu trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-4-ep-kieu-du-lieu-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-4-ep-kieu-du-lieu-trong-javascript.html</id>
-
-        <updated>2025-12-29T17:49:52+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Bài 4: Ép kiểu dữ liệu trong JavaScript Ép kiểu dữ liệu là quá trình chuyển đổi dữ liệu từ kiểu này sang kiểu khác để phù hợp với mục&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><section class="lesson">
-  <h2>Bài 4: Ép kiểu dữ liệu trong JavaScript</h2>
-
-  <p>
-    <strong>Ép kiểu dữ liệu</strong> là quá trình chuyển đổi dữ liệu
-    từ kiểu này sang kiểu khác để phù hợp với mục đích sử dụng.
-  </p>
-
-  <h3>1. Ép kiểu sang Number</h3>
-  <p>
-    Dùng hàm <code>Number()</code> để chuyển chuỗi sang số.
-  </p>
-
-  <pre><code>
-let a = "10";
-let b = Number(a);
-
-console.log(b);
-console.log(typeof b);
-  </code></pre>
-
-  <h3>2. Ép kiểu sang String</h3>
-  <p>
-    Dùng hàm <code>String()</code> để chuyển dữ liệu sang chuỗi.
-  </p>
-
-  <pre><code>
-let num = 20;
-let text = String(num);
-
-console.log(text);
-console.log(typeof text);
-  </code></pre>
-
-  <h3>3. Ép kiểu tự động</h3>
-  <p>
-    JavaScript có thể tự động ép kiểu trong một số trường hợp.
-  </p>
-
-  <pre><code>
-let x = "5" + 2;
-let y = "5" - 2;
-
-console.log(x);
-console.log(y);
-  </code></pre>
-
-  <p>
-    Dấu <code>+</code> sẽ nối chuỗi, còn dấu <code>-</code> sẽ ép kiểu sang số.
-  </p>
-
-  <h3>4. Giá trị NaN</h3>
-  <p>
-    <code>NaN</code> (Not a Number) xuất hiện khi việc ép kiểu thất bại.
-  </p>
-
-  <pre><code>
-let result = Number("abc");
-console.log(result);
-  </code></pre>
-
-  <div class="note">
-    📌 <strong>Ghi nhớ:</strong><br>
-    - Luôn kiểm tra kiểu dữ liệu sau khi ép kiểu<br>
-    - Cẩn thận với ép kiểu tự động<br>
-    - <code>NaN</code> là dấu hiệu dữ liệu không hợp lệ
-  </div>
-</section>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 5: Câu lệnh điều kiện if – else trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-5-cau-lenh-dieu-kien-if-else-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-5-cau-lenh-dieu-kien-if-else-trong-javascript.html</id>
-
-        <updated>2025-12-29T17:49:17+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Bài 5: Câu lệnh điều kiện if – else trong JavaScript Câu lệnh điều kiện cho phép chương trình đưa ra quyết định dựa trên điều kiện đúng hoặc sai.
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><section class="lesson">
-  <h2>Bài 5: Câu lệnh điều kiện if – else trong JavaScript</h2>
-
-  <p>
-    <strong>Câu lệnh điều kiện</strong> cho phép chương trình đưa ra
-    quyết định dựa trên điều kiện đúng hoặc sai.
-  </p>
-
-  <h3>1. Câu lệnh if</h3>
-  <p>
-    Câu lệnh <code>if</code> được sử dụng khi chỉ có một điều kiện cần kiểm tra.
-  </p>
-
-  <pre><code>
-let age = 20;
-
-if (age >= 18) {
-  console.log("Bạn đã đủ 18 tuổi");
-}
-  </code></pre>
-
-  <h3>2. Câu lệnh if – else</h3>
-  <p>
-    <code>else</code> được dùng khi điều kiện trong <code>if</code> không đúng.
-  </p>
-
-  <pre><code>
-let score = 4;
-
-if (score >= 5) {
-  console.log("Bạn đã đậu");
-} else {
-  console.log("Bạn đã rớt");
-}
-  </code></pre>
-
-  <h3>3. Điều kiện so sánh</h3>
-  <p>
-    Các toán tử so sánh thường dùng: <code>></code>, <code><</code>,
-    <code>>=</code>, <code><=</code>, <code>==</code>, <code>===</code>.
-  </p>
-
-  <pre><code>
-let number = 10;
-
-if (number === 10) {
-  console.log("Giá trị đúng");
-}
-  </code></pre>
-
-  <h3>4. Câu lệnh else if</h3>
-  <p>
-    <code>else if</code> dùng để kiểm tra nhiều điều kiện khác nhau.
-  </p>
-
-  <pre><code>
-let point = 8;
-
-if (point >= 9) {
-  console.log("Giỏi");
-} else if (point >= 7) {
-  console.log("Khá");
-} else {
-  console.log("Trung bình");
-}
-  </code></pre>
-
-  <div class="note">
-    📌 <strong>Ghi nhớ:</strong><br>
-    - Điều kiện luôn trả về true hoặc false<br>
-    - Ưu tiên dùng <code>===</code> thay vì <code>==</code><br>
-    - Viết điều kiện rõ ràng để tránh lỗi logic
-  </div>
-</section>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 6: Toán tử logic trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-6-toan-tu-logic-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-6-toan-tu-logic-trong-javascript.html</id>
-
-        <updated>2025-12-29T17:48:36+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Bài 6: Toán tử logic trong JavaScript Toán tử logic được dùng để kết hợp nhiều điều kiện và trả về kết quả đúng hoặc sai. Toán tử && trả&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><section class="lesson">
-  <h2>Bài 6: Toán tử logic trong JavaScript</h2>
-
-  <p>
-    <strong>Toán tử logic</strong> được dùng để kết hợp nhiều điều kiện
-    và trả về kết quả đúng hoặc sai.
-  </p>
-
-  <h3>1. Toán tử AND (&&)</h3>
-  <p>
-    Toán tử <code>&&</code> trả về <strong>true</strong> khi tất cả điều kiện đều đúng.
-  </p>
-
-  <pre><code>
-let age = 20;
-let hasID = true;
-
-if (age >= 18 && hasID) {
-  console.log("Đủ điều kiện");
-}
-  </code></pre>
-
-  <h3>2. Toán tử OR (||)</h3>
-  <p>
-    Toán tử <code>||</code> trả về <strong>true</strong> khi có ít nhất một điều kiện đúng.
-  </p>
-
-  <pre><code>
-let isStudent = false;
-let isTeacher = true;
-
-if (isStudent || isTeacher) {
-  console.log("Được truy cập");
-}
-  </code></pre>
-
-  <h3>3. Toán tử NOT (!)</h3>
-  <p>
-    Toán tử <code>!</code> dùng để phủ định giá trị.
-  </p>
-
-  <pre><code>
-let isOnline = false;
-
-if (!isOnline) {
-  console.log("Người dùng đang offline");
-}
-  </code></pre>
-
-  <h3>4. Kết hợp nhiều toán tử logic</h3>
-  <p>
-    Có thể kết hợp nhiều toán tử logic trong một điều kiện.
-  </p>
-
-  <pre><code>
-let score = 8;
-
-if (score >= 5 && score <= 10) {
-  console.log("Điểm hợp lệ");
-}
-  </code></pre>
-
-  <div class="note">
-    📌 <strong>Ghi nhớ:</strong><br>
-    - <code>&&</code>: tất cả điều kiện đúng<br>
-    - <code>||</code>: chỉ cần một điều kiện đúng<br>
-    - <code>!</code>: đảo ngược giá trị
-  </div>
-</section>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 7: Vòng lặp for trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-7-vong-lap-for-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-7-vong-lap-for-trong-javascript.html</id>
-
-        <updated>2025-12-29T17:47:52+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Bài 7: Vòng lặp for trong JavaScript Vòng lặp dùng để lặp lại một đoạn code nhiều lần. Trong JavaScript, vòng lặp for là vòng lặp phổ biến nhất. Vòng&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><section class="lesson">
-  <h2>Bài 7: Vòng lặp for trong JavaScript</h2>
-
-  <p>
-    <strong>Vòng lặp</strong> dùng để lặp lại một đoạn code nhiều lần.
-    Trong JavaScript, vòng lặp <code>for</code> là vòng lặp phổ biến nhất.
-  </p>
-
-  <h3>1. Cấu trúc vòng lặp for</h3>
-  <p>
-    Vòng lặp <code>for</code> gồm 3 phần: khởi tạo biến, điều kiện lặp
-    và bước tăng/giảm.
-  </p>
-
-  <pre><code>
-for (let i = 1; i <= 5; i++) {
-  console.log(i);
-}
-  </code></pre>
-
-  <p>
-    Đoạn code trên sẽ in ra các số từ 1 đến 5.
-  </p>
-
-  <h3>2. Biến đếm trong vòng lặp</h3>
-  <p>
-    Biến <code>i</code> thường được dùng làm biến đếm trong vòng lặp.
-  </p>
-
-  <pre><code>
-for (let i = 0; i < 3; i++) {
-  console.log("JavaScript");
-}
-  </code></pre>
-
-  <h3>3. Vòng lặp với điều kiện</h3>
-  <p>
-    Vòng lặp sẽ chạy khi điều kiện còn đúng.
-  </p>
-
-  <pre><code>
-for (let i = 2; i <= 10; i += 2) {
-  console.log(i);
-}
-  </code></pre>
-
-  <p>
-    Đoạn code trên in ra các số chẵn từ 2 đến 10.
-  </p>
-
-  <h3>4. Khi nào nên dùng vòng lặp for?</h3>
-  <ul>
-    <li>Khi biết trước số lần lặp</li>
-    <li>Khi cần xử lý danh sách số</li>
-    <li>Khi cần lặp theo chỉ số</li>
-  </ul>
-
-  <div class="note">
-    📌 <strong>Ghi nhớ:</strong><br>
-    - Vòng lặp giúp giảm lặp code<br>
-    - Luôn kiểm tra điều kiện để tránh vòng lặp vô hạn<br>
-    - Biến đếm nên khai báo bằng <code>let</code>
-  </div>
-</section>
-</div>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Bài 8: Hàm (Function) cơ bản trong JavaScript</title>
-        <author>
-            <name>Hoàng Anh Thư</name>
-        </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-8-ham-function-co-ban-trong-javascript.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-8-ham-function-co-ban-trong-javascript.html</id>
-
-        <updated>2025-12-29T17:47:05+07:00</updated>
-            <summary type="html">
-                <![CDATA[
-                    Bài 8: Hàm (Function) cơ bản trong JavaScript Hàm (function) là một khối lệnh dùng để thực hiện một công việc cụ thể và có thể được sử dụng nhiều&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                <div><section class="lesson">
-  <h2>Bài 8: Hàm (Function) cơ bản trong JavaScript</h2>
-
-  <p>
-    <strong>Hàm (function)</strong> là một khối lệnh dùng để thực hiện
-    một công việc cụ thể và có thể được sử dụng nhiều lần trong chương trình.
-  </p>
-
-  <h3>1. Khai báo hàm</h3>
-  <p>
-    Cú pháp khai báo một hàm trong JavaScript như sau:
-  </p>
-
-  <pre><code>
-function sayHello() {
-  console.log("Xin chào JavaScript");
-}
-
-sayHello();
-  </code></pre>
-
-  <h3>2. Hàm có tham số</h3>
-  <p>
-    Hàm có thể nhận <strong>tham số</strong> để xử lý dữ liệu linh hoạt hơn.
-  </p>
-
-  <pre><code>
-function greet(name) {
-  console.log("Xin chào " + name);
-}
-
-greet("An");
-greet("Bình");
-  </code></pre>
-
-  <h3>3. Hàm có giá trị trả về</h3>
-  <p>
-    Sử dụng từ khóa <code>return</code> để trả về kết quả từ hàm.
-  </p>
-
-  <pre><code>
-function tinhTong(a, b) {
-  return a + b;
-}
-
-let ketQua = tinhTong(4, 6);
-console.log(ketQua);
-  </code></pre>
-
-  <h3>4. Lưu kết quả hàm vào biến</h3>
-  <p>
-    Giá trị trả về của hàm có thể được gán cho một biến.
-  </p>
-
-  <pre><code>
-let result = tinhTong(2, 3);
-console.log(result);
-  </code></pre>
-
-  <h3>5. Khi nào nên dùng hàm?</h3>
-  <ul>
-    <li>Khi một đoạn code được dùng nhiều lần</li>
-    <li>Khi muốn chương trình dễ đọc và dễ bảo trì</li>
-    <li>Khi cần chia nhỏ chương trình thành các phần</li>
-  </ul>
-
-  <div class="note">
-    📌 <strong>Ghi nhớ:</strong><br>
-    - Hàm giúp tái sử dụng code<br>
-    - Hàm có thể có hoặc không có tham số<br>
-    - Hàm có thể trả về hoặc không trả về giá trị
-  </div>
-</section>
-</div>
-            ]]>
-        </content>
-    </entry>
     <entry>
         <title>Bài 9: Phạm vi biến (Scope) trong JavaScript</title>
         <author>
@@ -729,7 +17,7 @@ console.log(result);
         <link href="https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript.html"/>
         <id>https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript.html</id>
 
-        <updated>2025-12-29T17:41:53+07:00</updated>
+        <updated>2025-12-26T18:00:00+07:00</updated>
             <summary type="html">
                 <![CDATA[
                     Bài 9: Phạm vi biến (Scope) trong JavaScript Phạm vi biến (scope) quyết định biến có thể được sử dụng ở đâu trong chương trình JavaScript. Hiểu rõ scope giúp&hellip;
@@ -831,65 +119,714 @@ console.log(text); // lỗi
         </content>
     </entry>
     <entry>
-        <title>Bài 9: Kết nối Java Backend và JavaScript Frontend trong lập trình Web</title>
+        <title>Bài 8: Hàm (Function) cơ bản trong JavaScript</title>
         <author>
             <name>Hoàng Anh Thư</name>
         </author>
-        <link href="https://sauciu.github.io/blog-lap-trinh/bai-9-ket-noi-java-backend-va-javascript-frontend-trong-lap-trinh-web.html"/>
-        <id>https://sauciu.github.io/blog-lap-trinh/bai-9-ket-noi-java-backend-va-javascript-frontend-trong-lap-trinh-web.html</id>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-8-ham-function-co-ban-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-8-ham-function-co-ban-trong-javascript.html</id>
 
-        <updated>2025-12-27T21:27:00+07:00</updated>
+        <updated>2025-12-26T08:51:00+07:00</updated>
             <summary type="html">
                 <![CDATA[
-                    Đoạn code JavaScript (Frontend) &lt;button onclick="sendData()"&gt;Gửi yêu cầu&lt;/button&gt; &lt;script&gt; function sendData() { fetch("http://localhost:8080/hello") .then(response =&gt; response.text()) .then(result =&gt; { console.log(result); }); } &lt;/script&gt; Giải thích ngắn: fetch() dùng để gửi&hellip;
+                    Bài 8: Hàm (Function) cơ bản trong JavaScript Hàm (function) là một khối lệnh dùng để thực hiện một công việc cụ thể và có thể được sử dụng nhiều&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                
-    <h3 id="doan-code-javascript-frontend">
-      Đoạn code JavaScript (Frontend)
-    </h3>
-<pre class="line-numbers  language-javascript"><code>&lt;button onclick="sendData()"&gt;Gửi yêu cầu&lt;/button&gt;
+                <div><section class="lesson">
+  <h2>Bài 8: Hàm (Function) cơ bản trong JavaScript</h2>
 
-&lt;script&gt;
-function sendData() {
-    fetch("http://localhost:8080/hello")
-        .then(response =&gt; response.text())
-        .then(result =&gt; {
-            console.log(result);
-        });
+  <p>
+    <strong>Hàm (function)</strong> là một khối lệnh dùng để thực hiện
+    một công việc cụ thể và có thể được sử dụng nhiều lần trong chương trình.
+  </p>
+
+  <h3>1. Khai báo hàm</h3>
+  <p>
+    Cú pháp khai báo một hàm trong JavaScript như sau:
+  </p>
+
+  <pre><code>
+function sayHello() {
+  console.log("Xin chào JavaScript");
 }
-&lt;/script&gt;
-</code></pre>
 
+sayHello();
+  </code></pre>
+
+  <h3>2. Hàm có tham số</h3>
   <p>
-    <br>Giải thích ngắn:<br><br><code>fetch()</code> dùng để gửi yêu cầu lên Server<br><br>Server trả dữ liệu về<br><br><code>console.log(result)</code> dùng để xem kết quả nhận được<br><br>Kết quả hiển thị trên console:
-  </p>
-<pre class="line-numbers  language-javascript"><code>Hello from Java Backend</code></pre>
-
-    <h3 id="doan-code-java-backend">
-      Đoạn code Java (Backend)
-    </h3>
-<pre class="line-numbers  language-javascript"><code>@WebServlet("/hello")
-public class HelloServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
-        response.getWriter().write("Hello from Java Backend");
-    }
-}</code></pre>
-
-  <p>
-    <br>Giải thích ngắn:
+    Hàm có thể nhận <strong>tham số</strong> để xử lý dữ liệu linh hoạt hơn.
   </p>
 
+  <pre><code>
+function greet(name) {
+  console.log("Xin chào " + name);
+}
+
+greet("An");
+greet("Bình");
+  </code></pre>
+
+  <h3>3. Hàm có giá trị trả về</h3>
+  <p>
+    Sử dụng từ khóa <code>return</code> để trả về kết quả từ hàm.
+  </p>
+
+  <pre><code>
+function tinhTong(a, b) {
+  return a + b;
+}
+
+let ketQua = tinhTong(4, 6);
+console.log(ketQua);
+  </code></pre>
+
+  <h3>4. Lưu kết quả hàm vào biến</h3>
+  <p>
+    Giá trị trả về của hàm có thể được gán cho một biến.
+  </p>
+
+  <pre><code>
+let result = tinhTong(2, 3);
+console.log(result);
+  </code></pre>
+
+  <h3>5. Khi nào nên dùng hàm?</h3>
   <ul>
-    <li>Servlet nhận yêu cầu từ JavaScript</li><li>Xử lý và trả dữ liệu về cho Client</li><li>Dữ liệu trả về là chuỗi văn bản</li>
+    <li>Khi một đoạn code được dùng nhiều lần</li>
+    <li>Khi muốn chương trình dễ đọc và dễ bảo trì</li>
+    <li>Khi cần chia nhỏ chương trình thành các phần</li>
   </ul>
 
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Hàm giúp tái sử dụng code<br>
+    - Hàm có thể có hoặc không có tham số<br>
+    - Hàm có thể trả về hoặc không trả về giá trị
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 7: Vòng lặp for trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-7-vong-lap-for-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-7-vong-lap-for-trong-javascript.html</id>
+
+        <updated>2025-12-23T09:53:00+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 7: Vòng lặp for trong JavaScript Vòng lặp dùng để lặp lại một đoạn code nhiều lần. Trong JavaScript, vòng lặp for là vòng lặp phổ biến nhất. Vòng&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 7: Vòng lặp for trong JavaScript</h2>
+
   <p>
-    
+    <strong>Vòng lặp</strong> dùng để lặp lại một đoạn code nhiều lần.
+    Trong JavaScript, vòng lặp <code>for</code> là vòng lặp phổ biến nhất.
   </p>
+
+  <h3>1. Cấu trúc vòng lặp for</h3>
+  <p>
+    Vòng lặp <code>for</code> gồm 3 phần: khởi tạo biến, điều kiện lặp
+    và bước tăng/giảm.
+  </p>
+
+  <pre><code>
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+  </code></pre>
+
+  <p>
+    Đoạn code trên sẽ in ra các số từ 1 đến 5.
+  </p>
+
+  <h3>2. Biến đếm trong vòng lặp</h3>
+  <p>
+    Biến <code>i</code> thường được dùng làm biến đếm trong vòng lặp.
+  </p>
+
+  <pre><code>
+for (let i = 0; i < 3; i++) {
+  console.log("JavaScript");
+}
+  </code></pre>
+
+  <h3>3. Vòng lặp với điều kiện</h3>
+  <p>
+    Vòng lặp sẽ chạy khi điều kiện còn đúng.
+  </p>
+
+  <pre><code>
+for (let i = 2; i <= 10; i += 2) {
+  console.log(i);
+}
+  </code></pre>
+
+  <p>
+    Đoạn code trên in ra các số chẵn từ 2 đến 10.
+  </p>
+
+  <h3>4. Khi nào nên dùng vòng lặp for?</h3>
+  <ul>
+    <li>Khi biết trước số lần lặp</li>
+    <li>Khi cần xử lý danh sách số</li>
+    <li>Khi cần lặp theo chỉ số</li>
+  </ul>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Vòng lặp giúp giảm lặp code<br>
+    - Luôn kiểm tra điều kiện để tránh vòng lặp vô hạn<br>
+    - Biến đếm nên khai báo bằng <code>let</code>
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 6: Toán tử logic trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-6-toan-tu-logic-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-6-toan-tu-logic-trong-javascript.html</id>
+
+        <updated>2025-12-19T23:01:00+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 6: Toán tử logic trong JavaScript Toán tử logic được dùng để kết hợp nhiều điều kiện và trả về kết quả đúng hoặc sai. Toán tử && trả&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 6: Toán tử logic trong JavaScript</h2>
+
+  <p>
+    <strong>Toán tử logic</strong> được dùng để kết hợp nhiều điều kiện
+    và trả về kết quả đúng hoặc sai.
+  </p>
+
+  <h3>1. Toán tử AND (&&)</h3>
+  <p>
+    Toán tử <code>&&</code> trả về <strong>true</strong> khi tất cả điều kiện đều đúng.
+  </p>
+
+  <pre><code>
+let age = 20;
+let hasID = true;
+
+if (age >= 18 && hasID) {
+  console.log("Đủ điều kiện");
+}
+  </code></pre>
+
+  <h3>2. Toán tử OR (||)</h3>
+  <p>
+    Toán tử <code>||</code> trả về <strong>true</strong> khi có ít nhất một điều kiện đúng.
+  </p>
+
+  <pre><code>
+let isStudent = false;
+let isTeacher = true;
+
+if (isStudent || isTeacher) {
+  console.log("Được truy cập");
+}
+  </code></pre>
+
+  <h3>3. Toán tử NOT (!)</h3>
+  <p>
+    Toán tử <code>!</code> dùng để phủ định giá trị.
+  </p>
+
+  <pre><code>
+let isOnline = false;
+
+if (!isOnline) {
+  console.log("Người dùng đang offline");
+}
+  </code></pre>
+
+  <h3>4. Kết hợp nhiều toán tử logic</h3>
+  <p>
+    Có thể kết hợp nhiều toán tử logic trong một điều kiện.
+  </p>
+
+  <pre><code>
+let score = 8;
+
+if (score >= 5 && score <= 10) {
+  console.log("Điểm hợp lệ");
+}
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - <code>&&</code>: tất cả điều kiện đúng<br>
+    - <code>||</code>: chỉ cần một điều kiện đúng<br>
+    - <code>!</code>: đảo ngược giá trị
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 5: Câu lệnh điều kiện if – else trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-5-cau-lenh-dieu-kien-if-else-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-5-cau-lenh-dieu-kien-if-else-trong-javascript.html</id>
+
+        <updated>2025-12-19T21:51:00+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 5: Câu lệnh điều kiện if – else trong JavaScript Câu lệnh điều kiện cho phép chương trình đưa ra quyết định dựa trên điều kiện đúng hoặc sai.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 5: Câu lệnh điều kiện if – else trong JavaScript</h2>
+
+  <p>
+    <strong>Câu lệnh điều kiện</strong> cho phép chương trình đưa ra
+    quyết định dựa trên điều kiện đúng hoặc sai.
+  </p>
+
+  <h3>1. Câu lệnh if</h3>
+  <p>
+    Câu lệnh <code>if</code> được sử dụng khi chỉ có một điều kiện cần kiểm tra.
+  </p>
+
+  <pre><code>
+let age = 20;
+
+if (age >= 18) {
+  console.log("Bạn đã đủ 18 tuổi");
+}
+  </code></pre>
+
+  <h3>2. Câu lệnh if – else</h3>
+  <p>
+    <code>else</code> được dùng khi điều kiện trong <code>if</code> không đúng.
+  </p>
+
+  <pre><code>
+let score = 4;
+
+if (score >= 5) {
+  console.log("Bạn đã đậu");
+} else {
+  console.log("Bạn đã rớt");
+}
+  </code></pre>
+
+  <h3>3. Điều kiện so sánh</h3>
+  <p>
+    Các toán tử so sánh thường dùng: <code>></code>, <code><</code>,
+    <code>>=</code>, <code><=</code>, <code>==</code>, <code>===</code>.
+  </p>
+
+  <pre><code>
+let number = 10;
+
+if (number === 10) {
+  console.log("Giá trị đúng");
+}
+  </code></pre>
+
+  <h3>4. Câu lệnh else if</h3>
+  <p>
+    <code>else if</code> dùng để kiểm tra nhiều điều kiện khác nhau.
+  </p>
+
+  <pre><code>
+let point = 8;
+
+if (point >= 9) {
+  console.log("Giỏi");
+} else if (point >= 7) {
+  console.log("Khá");
+} else {
+  console.log("Trung bình");
+}
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Điều kiện luôn trả về true hoặc false<br>
+    - Ưu tiên dùng <code>===</code> thay vì <code>==</code><br>
+    - Viết điều kiện rõ ràng để tránh lỗi logic
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 4: Ép kiểu dữ liệu trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-4-ep-kieu-du-lieu-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-4-ep-kieu-du-lieu-trong-javascript.html</id>
+
+        <updated>2025-12-18T17:49:00+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 4: Ép kiểu dữ liệu trong JavaScript Ép kiểu dữ liệu là quá trình chuyển đổi dữ liệu từ kiểu này sang kiểu khác để phù hợp với mục&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 4: Ép kiểu dữ liệu trong JavaScript</h2>
+
+  <p>
+    <strong>Ép kiểu dữ liệu</strong> là quá trình chuyển đổi dữ liệu
+    từ kiểu này sang kiểu khác để phù hợp với mục đích sử dụng.
+  </p>
+
+  <h3>1. Ép kiểu sang Number</h3>
+  <p>
+    Dùng hàm <code>Number()</code> để chuyển chuỗi sang số.
+  </p>
+
+  <pre><code>
+let a = "10";
+let b = Number(a);
+
+console.log(b);
+console.log(typeof b);
+  </code></pre>
+
+  <h3>2. Ép kiểu sang String</h3>
+  <p>
+    Dùng hàm <code>String()</code> để chuyển dữ liệu sang chuỗi.
+  </p>
+
+  <pre><code>
+let num = 20;
+let text = String(num);
+
+console.log(text);
+console.log(typeof text);
+  </code></pre>
+
+  <h3>3. Ép kiểu tự động</h3>
+  <p>
+    JavaScript có thể tự động ép kiểu trong một số trường hợp.
+  </p>
+
+  <pre><code>
+let x = "5" + 2;
+let y = "5" - 2;
+
+console.log(x);
+console.log(y);
+  </code></pre>
+
+  <p>
+    Dấu <code>+</code> sẽ nối chuỗi, còn dấu <code>-</code> sẽ ép kiểu sang số.
+  </p>
+
+  <h3>4. Giá trị NaN</h3>
+  <p>
+    <code>NaN</code> (Not a Number) xuất hiện khi việc ép kiểu thất bại.
+  </p>
+
+  <pre><code>
+let result = Number("abc");
+console.log(result);
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Luôn kiểm tra kiểu dữ liệu sau khi ép kiểu<br>
+    - Cẩn thận với ép kiểu tự động<br>
+    - <code>NaN</code> là dấu hiệu dữ liệu không hợp lệ
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 3: Toán tử trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-3-toan-tu-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-3-toan-tu-trong-javascript.html</id>
+
+        <updated>2025-12-16T08:56:00+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 3: Toán tử trong JavaScript Toán tử được dùng để thực hiện các phép tính, so sánh và gán giá trị trong JavaScript. Các toán tử số học thường&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 3: Toán tử trong JavaScript</h2>
+
+  <p>
+    <strong>Toán tử</strong> được dùng để thực hiện các phép tính,
+    so sánh và gán giá trị trong JavaScript.
+  </p>
+
+  <h3>1. Toán tử số học</h3>
+  <p>
+    Các toán tử số học thường dùng gồm:
+    <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code>.
+  </p>
+
+  <pre><code>
+let a = 10;
+let b = 3;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+  </code></pre>
+
+  <h3>2. Toán tử gán</h3>
+  <p>
+    Toán tử gán <code>=</code> dùng để gán giá trị cho biến.
+  </p>
+
+  <pre><code>
+let x = 5;
+x = x + 2;
+
+console.log(x);
+  </code></pre>
+
+  <h3>3. Toán tử so sánh</h3>
+  <p>
+    Toán tử so sánh dùng để so sánh hai giá trị
+    và trả về kết quả đúng hoặc sai.
+  </p>
+
+  <pre><code>
+let m = 5;
+let n = "5";
+
+console.log(m == n);
+console.log(m === n);
+console.log(m != n);
+console.log(m > 3);
+  </code></pre>
+
+  <h3>4. Toán tử tăng và giảm</h3>
+  <p>
+    Toán tử <code>++</code> dùng để tăng giá trị,
+    <code>--</code> dùng để giảm giá trị.
+  </p>
+
+  <pre><code>
+let count = 1;
+
+count++;
+console.log(count);
+
+count--;
+console.log(count);
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - <code>==</code> chỉ so sánh giá trị<br>
+    - <code>===</code> so sánh cả giá trị và kiểu dữ liệu<br>
+    - Sử dụng toán tử phù hợp để tránh lỗi
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 2: Kiểu dữ liệu cơ bản trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-2-kieu-du-lieu-co-ban-trong-javascript.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-2-kieu-du-lieu-co-ban-trong-javascript.html</id>
+
+        <updated>2025-12-13T21:54:00+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 2: Kiểu dữ liệu cơ bản trong JavaScript Kiểu dữ liệu cho biết loại giá trị mà một biến đang lưu trữ. JavaScript có nhiều kiểu dữ liệu, trong&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 2: Kiểu dữ liệu cơ bản trong JavaScript</h2>
+
+  <p>
+    <strong>Kiểu dữ liệu</strong> cho biết loại giá trị mà một biến đang lưu trữ.
+    JavaScript có nhiều kiểu dữ liệu, trong đó các kiểu cơ bản được dùng nhiều nhất.
+  </p>
+
+  <h3>1. Kiểu String (Chuỗi)</h3>
+  <p>
+    Kiểu <code>String</code> dùng để lưu trữ văn bản.
+    Chuỗi được đặt trong dấu ngoặc kép hoặc ngoặc đơn.
+  </p>
+
+  <pre><code>
+let name = "An";
+let message = 'Xin chào';
+
+console.log(name);
+console.log(message);
+  </code></pre>
+
+  <h3>2. Kiểu Number (Số)</h3>
+  <p>
+    Kiểu <code>Number</code> dùng để lưu trữ số nguyên hoặc số thập phân.
+  </p>
+
+  <pre><code>
+let age = 20;
+let score = 8.5;
+
+console.log(age);
+console.log(score);
+  </code></pre>
+
+  <h3>3. Kiểu Boolean (Đúng / Sai)</h3>
+  <p>
+    Kiểu <code>Boolean</code> chỉ có hai giá trị: <code>true</code> hoặc <code>false</code>.
+  </p>
+
+  <pre><code>
+let isStudent = true;
+let isOnline = false;
+
+console.log(isStudent);
+console.log(isOnline);
+  </code></pre>
+
+  <h3>4. Kiểm tra kiểu dữ liệu với typeof</h3>
+  <p>
+    Toán tử <code>typeof</code> dùng để kiểm tra kiểu dữ liệu của biến.
+  </p>
+
+  <pre><code>
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof isStudent);
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - String: văn bản<br>
+    - Number: số<br>
+    - Boolean: đúng hoặc sai<br>
+    - Dùng <code>typeof</code> để kiểm tra kiểu dữ liệu
+  </div>
+</section>
+</div>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Bài 1: Khai báo biến trong JavaScript</title>
+        <author>
+            <name>Hoàng Anh Thư</name>
+        </author>
+        <link href="https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript-2.html"/>
+        <id>https://sauciu.github.io/blog-lap-trinh/bai-1-khai-bao-bien-trong-javascript-2.html</id>
+
+        <updated>2025-12-10T17:51:00+07:00</updated>
+            <summary type="html">
+                <![CDATA[
+                    Bài 1: Khai báo biến trong JavaScript Biến dùng để lưu trữ dữ liệu trong JavaScript, chẳng hạn như tên, tuổi hoặc điểm số. Từ khóa let dùng để khai&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><section class="lesson">
+  <h2>Bài 1: Khai báo biến trong JavaScript</h2>
+
+  <p>
+    <strong>Biến</strong> dùng để lưu trữ dữ liệu trong JavaScript,
+    chẳng hạn như tên, tuổi hoặc điểm số.
+  </p>
+
+  <h3>1. Khai báo biến với let</h3>
+  <p>
+    Từ khóa <code>let</code> dùng để khai báo biến
+    và cho phép thay đổi giá trị của biến.
+  </p>
+
+  <pre><code>
+let name = "An";
+let age = 20;
+
+console.log(name);
+console.log(age);
+  </code></pre>
+
+  <h3>2. Khai báo hằng số với const</h3>
+  <p>
+    <code>const</code> dùng để khai báo biến
+    không thể thay đổi giá trị sau khi gán.
+  </p>
+
+  <pre><code>
+const country = "Vietnam";
+console.log(country);
+  </code></pre>
+
+  <h3>3. So sánh let và const</h3>
+  <ul>
+    <li><code>let</code>: có thể thay đổi giá trị</li>
+    <li><code>const</code>: không thể thay đổi giá trị</li>
+  </ul>
+
+  <h3>4. Ví dụ thực tế</h3>
+  <p>
+    Ví dụ dưới đây minh họa sự khác nhau giữa <code>let</code> và <code>const</code>.
+  </p>
+
+  <pre><code>
+let score = 8;
+score = 9;
+
+const subject = "JavaScript";
+
+console.log(score);
+console.log(subject);
+  </code></pre>
+
+  <div class="note">
+    📌 <strong>Ghi nhớ:</strong><br>
+    - Ưu tiên dùng <code>const</code><br>
+    - Chỉ dùng <code>let</code> khi cần thay đổi giá trị<br>
+    - Tên biến nên rõ nghĩa, dễ hiểu
+  </div>
+</section>
+</div>
             ]]>
         </content>
     </entry>
